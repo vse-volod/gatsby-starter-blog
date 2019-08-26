@@ -1,12 +1,32 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: 'Massively \n Gatsby theme usage example',
+    author: 'Vsevolod & HTML5 UP',
+    description: '',
+    siteUrl: 'https://gatsbytemplates.io/',
     social: {
-      twitter: `kylemathews`,
+      twitter: 'http://twitter.com/',
+      facebook: 'http://facebook.com/',
+      snapchat: 'http://snapchat.com/',
+      instagram: 'http://instagram.com/',
+      medium: 'http://medium.com/'
     },
+    menuLinks: [
+      {
+        "name": "home",
+        "link": "/"
+      },
+      {
+        "name": "about",
+        "link": "/about"
+      }
+    ],
+    contact: {
+      info: 'This is information about you',
+      email: 'information@untitled.tld',
+      tel: '(000) 000-0000',
+      address: '1234 Somewhere Road Nashville, TN 00000-0000'
+    }
   },
   plugins: [
     {
@@ -23,6 +43,10 @@ module.exports = {
         name: `assets`,
       },
     },
+    {
+      resolve: `gatsby-theme-massively`, options: {}
+    },
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
