@@ -28,6 +28,7 @@ module.exports = {
       address: '1234 Somewhere Road Nashville, TN 00000-0000'
     }
   },
+  pathPrefix: "/massively-demo",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
